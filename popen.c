@@ -31,7 +31,6 @@ int main( int argc, char * argv[] )
             argv[i] = NULL;
          }
       }
-printf("Calling %s\n", argv[1] );
       execvp( argv[1], &argv[1] );
    }
   else if( pid > 0 )
